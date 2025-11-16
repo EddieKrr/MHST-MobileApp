@@ -1,0 +1,132 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvTherapistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. Sarah Johnson"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Specialization -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_psychology"
+                android:layout_marginEnd="8dp"
+                app:tint="?attr/colorSecondary" />
+
+            <TextView
+                android:id="@+id/tvSpecialization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clinical Psychology"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location"
+                android:layout_marginEnd="8dp"
+                app:tint="?attr/colorSecondary" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nairobi, Westlands"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <!-- Availability -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_schedule"
+                android:layout_marginEnd="8dp"
+                app:tint="?attr/colorSecondary" />
+
+            <TextView
+                android:id="@+id/tvAvailability"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mon-Fri: 9AM-5PM"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Call"
+                app:icon="@drawable/ic_phone"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email"
+                app:icon="@drawable/ic_email"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MHST</string>
+    <string name="welcome_message">You\'ll love it here</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Full Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="register_here">Register here</string>
+    <string name="login_here">Login here</string>
+    <string name="home">Home</string>
+    <string name="articles">Articles</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="support_email">support@mhst.com</string>
+    <string name="phone_number">Phone: +254 701 258510</string>
+    <string name="address">Address: STC, First Floor</string>
+    <string name="did_you_know">Did you know?</string>
+    <string name="fun_fact">Ignoring intrusive thoughts doesn\'t make them go away (or make you a bad person). It is best to acknowledge the thought and let it pass</string>
+    <string name="creative_direction">Creative direction grounded in clarity and emotion.</string>
+</resources>

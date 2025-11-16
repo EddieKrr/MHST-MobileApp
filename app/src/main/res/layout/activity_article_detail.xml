@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@android:drawable/ic_menu_revert"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Article Title -->
+            <TextView
+                android:id="@+id/tvArticleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Article Title"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <!-- Category Badge -->
+            <TextView
+                android:id="@+id/tvArticleCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:background="@color/background"
+                android:padding="8dp"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Article Description -->
+            <TextView
+                android:id="@+id/tvArticleDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Article description"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Article Content -->
+            <TextView
+                android:id="@+id/tvArticleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Article content goes here..."
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
